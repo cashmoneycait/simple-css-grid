@@ -1,0 +1,283 @@
+/* Roooooot */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  top: 0;
+  background-color: #000;
+  overflow: scroll;
+}
+
+.bodyborder {
+    border-bottom:3.5em solid #FFEC00;
+    background-image:
+        linear-gradient(#7AE800, #FFEC00),
+        linear-gradient(#7AE800, #FFEC00);
+    background-size: 3.5em 100%;
+    background-position:0 0, 100% 0;
+    background-repeat:no-repeat;
+    z-index: 10;
+}
+
+footer{
+  position: relative;
+  margin: 10rem auto 0 auto;
+}
+
+footer .div {
+  display: inline-block;
+  float: left;
+}
+
+/* typography */
+
+*, html, body {
+  font-family: "larabiefont",monospace;
+  color: #fff;
+  line-height: 1.5rem;
+  text-rendering: optimizeLegibility;
+    -webkit-font-variant-ligatures: common-ligatures;
+    font-variant-ligatures: common-ligatures;
+    -webkit-font-smoothing: antialiased;
+}
+
+h1 {
+  font-family: uniwars, sans-serif;
+  font-style: italic;
+  font-weight: 600;
+  font-size: 6rem;
+  line-height: 7rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.75rem
+}
+
+h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom:.75rem;
+}
+
+p {
+  font-size: .75rem;
+  font-weight: 400;
+  line-height: 1.8;
+  margin-bottom:1rem;
+}
+
+.outline-black {
+  color: #000;
+  -webkit-text-fill-color: #fff;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #000;
+}
+
+.outline-white {
+  color: #fff;
+  -webkit-text-fill-color: #000;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #fff;
+}
+
+.uni-black {
+  color: #000;
+  -webkit-text-fill-color: #fff;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #000;
+
+  font-family: uniwars, sans-serif;
+  font-style: italic;
+  font-weight: 600;
+
+  background-color: #000;
+}
+
+.tenby-white {
+  color: #fff;
+  -webkit-text-fill-color: #000;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #fff;
+
+  font-family: tenby-eight, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+
+  background-color: #FFF;
+}
+
+
+/* position */
+
+.center {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.left {
+  margin: 0 auto;
+  text-align: left;
+}
+
+.right {
+  margin: 0 auto;
+  text-align: right;
+}
+
+.first, .second, .third, .fourth {
+  height: 100vh;
+  position: relative;
+}
+
+.container {
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.row {
+  margin: 2rem auto;
+}
+
+
+/* styling */
+
+.first, .second, .third, .fourth, .footer {
+  /*background: linear-gradient(to bottom right, #FE0072, #8800FF, #0038FB);*/
+  margin: 0 3.5rem;
+}
+
+/*
+.first, .third, .footer {
+  background-color: #000;
+}
+*/
+
+.second, .fourth{
+  background-color: #fff;
+}
+
+.second h1, .second h2, .second h3, .second p, .fourth h1, .fourth h2, .fourth h3, .fourth p{
+  color: #000;
+}
+
+a {
+  font-family: uniwars, sans-serif;
+  font-style: italic;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 1rem;
+}
+
+button {
+  background-color: #000;
+  color: #fff;
+  border: 2px solid #FFF;
+  font-family: uniwars, sans-serif;
+  font-style: italic;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 1rem;
+}
+
+button:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.topnav {
+    background-color: #7AE800;
+    width: 100%;
+    overflow: hidden;
+    position: fixed;
+    z-index: 10;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    color: white;
+    text-decoration: underline;
+}
+
+
+
+/* images */
+
+.img {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: block;
+}
+
+.img-smiley{
+  background-image: url(../img/smileyw.svgz);
+  height: 15rem;
+  margin: 3rem 0 4rem 0;
+
+}
+
+.img-smiley:hover {
+  -webkit-animation: spin .75s infinite linear;
+}
+
+@-webkit-keyframes spin {
+0%  {-webkit-transform: rotate(0deg);}
+100% {-webkit-transform: rotate(-360deg);}
+}
+
+.img-logo-white {
+  background-image: url(../img/smileyw.svgz);
+  -webkit-transform: rotate(180deg);
+  height: 2rem;
+  margin: 0;
+}
+
+.img-static {
+  background-image: url(../img/glitch1.gif);
+  height: 20rem;
+  margin: 3rem 0 4rem 0;
+}
+
+.img-plane {
+  background-image: url(../img/plane1.gif);
+  height: 60rem;
+  margin: .25rem 0 .5rem 0;
+}
+
+.img-wavey {
+  background-image: url(../img/wavey1.gif);
+  height: 18rem;
+  margin: 0 0 50px 0;
+}
